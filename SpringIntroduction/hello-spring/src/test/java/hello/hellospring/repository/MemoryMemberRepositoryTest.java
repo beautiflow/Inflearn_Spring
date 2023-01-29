@@ -25,6 +25,7 @@ class MemoryMemberRepositoryTest {
         repository.save(member);
 
         Member result = repository.findById(member.getId()).get();
+        // 검증 : 메모리에 저장한 것과 저장소에서 꺼낸 것이 동일해야 참이다.
         assertThat(member).isEqualTo(result);
     }
 
