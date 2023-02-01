@@ -15,7 +15,7 @@ public class MemberController {
 
     private MemberService memberService;
 
-    @Autowired
+    @Autowired // 생성자 주입 방식
     public MemberController(MemberService memberService) {
         this.memberService = memberService;
     }
