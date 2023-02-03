@@ -22,14 +22,14 @@ class MemberServiceIntegrationTest {
 
     @Test
     public void 회원가입() throws Exception {
-        //Given
+        //Given - 테스트할 데이터
         Member member = new Member();
         member.setName("spring100");
 
-        //When
+        //When - 검증하려는 로직 : MemberService의 join()
         Long saveId = memberService.join(member);
 
-        //Then
+        //Then - 테스트 결과 (검증부)
         Member findMember = memberRepository.findById(saveId).get();
         assertEquals(member.getName(), findMember.getName());
     }
