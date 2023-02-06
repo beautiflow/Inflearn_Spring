@@ -14,7 +14,7 @@ public class OrderServiceTest {
 
     @Test
     void createOrder(){
-        Long memberId = 1L;
+        Long memberId = 1L;  // null 이 들어갈 수도 없어서 wrapper type 썼음
         Member member = new Member(memberId, "memberA", Grade.VIP);
         memberService.join(member);
 

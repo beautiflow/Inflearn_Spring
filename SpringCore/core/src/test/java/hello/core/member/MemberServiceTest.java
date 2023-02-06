@@ -9,14 +9,14 @@ public class MemberServiceTest {
 
     @Test
     void join(){
-        // given
+        // given : 테스트 대상
         Member member = new Member(1L, "memberA", Grade.VIP);
 
-        // when
+        // when : 시험 내용
         memberService.join(member);
         Member findMember = memberService.findMember(1L);
 
-        // then
+        // then : 기댓값
         Assertions.assertThat(member).isEqualTo(findMember);
     }
 }
