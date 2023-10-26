@@ -8,4 +8,6 @@
 
 ### 스프링 MVC 1편 - servlet, springmvc, item-service
 
+### 스프링 MVC 2편 - thymeleaf-basic
+
 ### 실전! 스프링부트와 JPA 활용 1 - jpashop
