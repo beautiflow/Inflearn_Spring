@@ -23,7 +23,7 @@ public class LogInterceptor implements HandlerInterceptor {
         request.setAttribute(LOG_ID, uuid);
 
         // @RequestMapping: HandlerMethod
-        // 정적 리소르 : ResourceHttpRequestHandler
+        // 정적 리소스 : ResourceHttpRequestHandler
         if(handler instanceof HandlerMethod){
             HandlerMethod hm = (HandlerMethod) handler; // 호출할 컨트롤러 메서드의 모든 정보가 포함되어 있다.
         }
