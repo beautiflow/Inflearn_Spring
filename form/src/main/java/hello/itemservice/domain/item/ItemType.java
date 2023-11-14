@@ -7,7 +7,7 @@ public enum ItemType {
     private final String description;
 
     ItemType(String description){
-        this.description = description;
+        this.description = description;ㄹㅁㄴㅇㄹㅁㅇㄴㄹㅁㄴㅇㄹ
     }
 
     public String getDescription() {

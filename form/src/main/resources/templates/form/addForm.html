@@ -44,7 +44,7 @@
         </div>
 
         <!-- multi checkbox -->
-        <div>
+        <div>ㄴㅇㄹㅁㄴㅇㄹㅁㄴㅇㄹ
             <div>등록 지역</div>
             <div th:each="region : ${regions}" class="form-check form-check-inline">
                 <input type="checkbox" th:field="*{regions}" th:value="${region.key}" class="form-check-input">
@@ -64,17 +64,7 @@
             </div>
         </div>
 
-        <!-- SELECT -->
-        <div>
-            <div>배송 방식</div>
-            <select th:field="*{deliveryCode}" class="form-select">
-                <option value="">==배송 방식 선택==</option>
-                <option th:each="deliveryCode : ${deliveryCodes}" th:value="${deliveryCode.code}"
-                        th:text="${deliveryCode.displayName}">FAST</option>
-            </select>
-        </div>
-
-        <hr class="my-4 ">
+        ㅁㅁ
 
 
 
