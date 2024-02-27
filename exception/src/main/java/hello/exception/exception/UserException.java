@@ -1,4 +1,4 @@
-package hello.exception.UserException;
+package hello.exception.exception;
 
 public class UserException extends RuntimeException {
 
