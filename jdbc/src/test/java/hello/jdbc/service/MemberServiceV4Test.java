@@ -50,7 +50,9 @@ class MemberServiceV4Test {
 
         @Bean
         MemberRepository memberRepository(){
+//            return new MemberRepositoryV4_1(dataSource);
             return new MemberRepositoryV4_1(dataSource);
+
         }
 
         @Bean
