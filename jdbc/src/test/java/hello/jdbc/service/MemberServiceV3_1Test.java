@@ -25,6 +25,10 @@ import org.springframework.transaction.PlatformTransactionManager;
 @Slf4j
 class MemberServiceV3_1Test {
 
+    public static final String MEMBER_A = "memberA";
+    public static final String MEMBER_B = "memberB";
+    public static final String MEMBER_EX = "ex";
+
     private MemberRepositoryV3 memberRepository;
     private MemberServiceV3_1 memberService;
 
@@ -39,9 +43,9 @@ class MemberServiceV3_1Test {
 
     @AfterEach
     void after() throws SQLException {
-        memberRepository.delete("memberA");
-        memberRepository.delete("memberB");
-        memberRepository.delete("ex");
+        memberRepository.delete(MEMBER_A);
+        memberRepository.delete(MEMBER_B);
+        memberRepository.delete(MEMBER_EX);
     }
 
     @Test

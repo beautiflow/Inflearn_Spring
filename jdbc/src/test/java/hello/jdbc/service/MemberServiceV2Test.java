@@ -20,6 +20,10 @@ import static org.assertj.core.api.Assertions.assertThatThrownBy;
 @Slf4j
 class MemberServiceV2Test {
 
+    public static final String MEMBER_A = "memberA";
+    public static final String MEMBER_B = "memberB";
+    public static final String MEMBER_EX = "ex";
+
     private MemberRepositoryV2 memberRepository;
     private MemberServiceV2 memberService;
 
@@ -32,9 +36,9 @@ class MemberServiceV2Test {
 
     @AfterEach
     void after() throws SQLException {
-        memberRepository.delete("memberA");
-        memberRepository.delete("memberB");
-        memberRepository.delete("ex");
+        memberRepository.delete(MEMBER_A);
+        memberRepository.delete(MEMBER_B);
+        memberRepository.delete(MEMBER_EX);
     }
 
     @Test
