@@ -12,6 +12,8 @@
 
 ### 스프링 DB 1편 - jdbc
 
+### 스프링 DB 2편 - springtx
+
 ### 스프링 핵심 원리 - 고급편 - advanced
 
 ### 실전! 스프링부트와 JPA 활용 1 - jpashop
